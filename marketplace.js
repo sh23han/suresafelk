@@ -37,3 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
         mainContent.style.opacity = 1;  // Fade in the content
     }, 2000);  // Simulated delay of 2 seconds for demo purposes
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const whatsappContainer = document.getElementById('whatsapp-container');
+    const messageBubble = document.getElementById('message-bubble');
+
+    // Delay for the popup effect
+    setTimeout(() => {
+        whatsappContainer.classList.add('show');  // Show the WhatsApp icon and message bubble
+    }, 1000);  // Delay of 1 second for the effect
+
+    // Hide the message bubble after a few seconds
+    setTimeout(() => {
+        messageBubble.style.opacity = '0';  // Fade out the message bubble
+    }, 10000);  // Hide the message after 5 seconds
+});
