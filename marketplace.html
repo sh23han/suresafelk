@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Filter</title>
+    <link rel="stylesheet" href="marketplace.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader"></div>
+    
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;"> <!-- Hide content initially -->
+        <header>
+           <img src="assets/sslogo.jpg" alt=""> 
+           <h1>Sure Safe Marketplace <span><p>For more Details Contact</p><hr>0715699236</span></h1>
+        </header>
+
+        <div class="container">
+            <aside>
+                <h2>Categories</h2>
+                <ul>
+                    <li><button class="filter-btn" data-category="all">All</button></li>
+                    <li><button class="filter-btn" data-category="electronics">Electronics</button></li>
+                    <li><button class="filter-btn" data-category="fashion">Fashion</button></li>
+                    <li><button class="filter-btn" data-category="home">Home Appliances</button></li>
+                </ul>
+            </aside>
+            
+            <section id="product-list">
+                <div class="product animate" data-category="electronics">
+                    <img src="assets/tv.jpeg" alt="Sony TV 45inch">
+                    <h3>Sony TV 45inch</h3>
+                    <p>Latest model with amazing features.</p>
+                </div>
+                <div class="product animate" data-category="fashion">
+                    <h3>Leather Jacket</h3>
+                    <p>Stylish and durable leather jacket.</p>
+                    <h3>60,000/-</h3>
+                </div>
+                <div class="product animate" data-category="home">
+                    <img src="assets/oven.jpeg" alt="Microwave Oven">
+                    <h3>Microwave Oven</h3>
+                    <p>Advanced microwave with smart features.</p>
+                    <h3>60,000/-</h3>
+                </div>
+                <div class="product animate" data-category="electronics">
+                    <h3>Laptop</h3>
+                    <p>High performance for gaming and work.</p>
+                    <h3>60,000/-</h3>
+                </div>
+                <div class="product animate" data-category="fashion">
+                    <img src="assets/shoes.png" alt="Running Shoes">
+                    <h3>Running Shoes</h3>
+                    <p>Comfortable and lightweight.</p>
+                    <h3>60,000/-</h3>
+                </div>
+                <div class="product animate" data-category="home">
+                    <h3>Vacuum Cleaner</h3>
+                    <p>Powerful vacuum with sleek design.</p>
+                    <h3>60,000/-</h3>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="marketplace.js"></script>
+</body>
+</html>

@@ -563,6 +563,12 @@ nav {
 
   .footer-item {
       font-size: 14px;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  .footer-item a{
+    margin-bottom: 8px;
+    font-size: 1rem;
   }
   .header__stats2 {
     display: flex;
